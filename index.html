@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="css/Framework.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="p-20">
+            <div class="container">
+                <div class="d-grid grid-3 align-items-center">
+                    <div class="logo d-flex align-items-center ">
+                        <div class="bar ml-15 position-relative"></div>
+                        <a href=""><img src="/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="search ">
+                        <form action="" class="position-relative">
+                            <span><img src="images/i-search.png" alt=""></span>
+                            <input type="text " name="" id="" placeholder="search for Anything"
+                                onfocus="this.placeholder=''" onblur="this.placeholder='Search for Anything'">
+                        </form>
+                    </div>
+                    <div class="user">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <div class="navt">
+                                <a class="position-relative"><img src="images/i-navt.png" alt=""><span
+                                        class="d-flex justify-content-center align-items-center">02</span></a>
+                            </div>
+                            <div class="user_area ml-30 position-relative">
+                                <a href="javascript:void(0)" class=" d-flex align-items-center LinkDrop"
+                                    data-menu="option menu">
+                                    <figure>
+                                        <img src="images/cropped_image.png" alt="">
+                                    </figure>
+                                    <span class="ml-5 d-flex align-items-center name ">
+                                        Hi, Andrew
+                                        <!-- using bootstrap tag
+                                          <i class="fa-solid fa-angle-down"></i>
+                                           -->
+                                        <!-- how to make arrow by css -->
+                                        <i class="arrowDown ml-5 "></i>
+                                        <!-- ul>li*4>a  shortcut in vscode-->
+                                        <ul class="list-unstyled p-0 dropDown " id="option menu">
+                                            <li><a href="">Home</a></li>
+                                            <li><a href="">profile</a></li>
+                                            <li><a href="">Setting</a></li>
+                                            <li><a href="">Logout</a></li>
+                                        </ul>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="content-dashbourd">
+        <div class="sideBar">
+            <div class="container">
+                <div class="user-information text-center pt-40 ">
+                    <figure class="user-img m-auto position-relative"><img src="images/cropped_image.png" alt="">
+                    </figure>
+                    <span class="num-n">2</span>
+                    <h5 class="mt-15"> Andrew Sherif</h5>
+                    <p><small>Cs Student</small></p>
+                    <ul class="list-unstyled data-user p-0 d-flex justify-content-center align-items-center mt-15">
+                        <li>
+                            <figure><img src="images/money.png" alt=""></figure>
+                        </li>
+                        <li>
+                            <figure><img src="images/magic.png" alt=""></figure>
+                        </li>
+                        <li>
+                            <figure><img src="images/award.png" alt=""></figure>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menus">
+                    <ul class="list-unstyled p-0 ">
+                        <li class="position-relative">
+                            <a class="d-flex align-items-center LinkDrop " href="" data-menu="sub-menu"><span
+                                    class="mr-15"><img src="images/games.png" alt=""></span>Games <i>2</i> </a>
+                            <!-- data-menu = "sub-menu" -->
+                            <ul id="sub-menu" class="list-unstyled p-20 dropDown ">
+                                <li><a href="">Competitions</a></li>
+                                <li><a href="">Pending</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="d-flex align-items-center LinkDrop " href="" data-menu="sub-menu2"><span
+                                    class="mr-15"><img src="images/videos.png" alt=""></span>Videos <i>3</i></a>
+                            <ul id="sub-menu2" class="list-unstyled p-20 dropDown ">
+                                <li><a href="">Films</a></li>
+                                <li><a href="">Series</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="d-flex align-items-center LinkDrop " href="" data-menu="sub-menu3"><span
+                                    class="mr-15"><img src="images/events.png" alt=""></span>Events <i>4</i></a>
+                            <ul id="sub-menu3" class="list-unstyled p-20 dropDown ">
+                                <li><a href="">Invite</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="d-flex align-items-center LinkDrop" href="" data-menu="sub-menu4"><span
+                                    class="mr-15"><img src="images/leaderbords.png" alt=""></span>Leaderbords</a>
+                            <ul id="sub-menu4" class="list-unstyled p-20 dropDown ">
+                                <li><a href="">Scores</a></li>
+                                <li><a href="">Ranks</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-Body">
+            <div class="top-bar d-grid  align-items-center">
+                <select name="" id="">
+                    <optgroup label="Swedish Cars">
+                        <option value="volvo">suggestion</option>
+                        <option value="saab">important</option>
+                    </optgroup>
+                    <optgroup label="others">
+                        <option value="mercedes">invites</option>
+                        <option value="">send</option>
+                    </optgroup>
+                </select>
+                <ul class="link-tab list-unstyled d-flex justify-content-around p-0">
+                    <li><a class="linkTab activeLink" href="" data-areaTab="tab01">Recommended</a></li>
+                    <li><a class="linkTab" href="" data-areaTab="tab02">Trending Games</a></li>
+                    <li><a class="linkTab" href="" data-areaTab="tab03">New Releases</a></li>
+                </ul>
+                <ul class="list-grid  list-unstyled d-flex justify-content-around p-0">
+                    <li><a class="grid" href=""><span></span></a></li>
+                    <li><a class="list" href=""><span></span></a></li>
+                </ul>
+            </div>
+
+         <div class="tabs">
+            <div class="tab-content fade active " id="tab01">
+                <div class="content-Box mt-50">
+                    <div class="head d-flex align-items-center justify-content-between">
+                        <div class="div">
+                            <h4>Dont miss them</h4>
+                            <h3>Recommended for you</h3>
+                        </div>
+                        <a href="" class="buttom">Veiw all</a>
+                    </div>
+                    <div class="cards d-grid">
+                        <div class="card-item bg-02 position-relative">
+                            <ul class="d-flex p-0 align-items-center list-unstyled ">
+                                <li>
+                                    <span class="user"><i class="icon-user"></i> 4,991,023</span>
+                                </li>
+                                <li>
+                                    <span class="stars">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star off"></i>
+                                        <i class="star off"></i>
+                                    </span>
+                                    <em>4.5</em>
+                                </li>
+                            </ul>
+                            <div class="thumb">
+                                <div class="image">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2> Score! Hero</h2>
+                                    <p>First Touch Games Ltd.</p>
+                                </div>
+                            </div>
+                                <a href="">Additional Information</a>
+                                <div class="main-img">
+                                    <img class="" src="images/img02.png" alt="">
+                                </div>
+    
+                           
+                        </div>
+                        <div class="card-item bg-01 position-relative">
+                            <ul class="d-flex p-0 align-items-center list-unstyled ">
+                                <li>
+                                    <span class="user"><i class="icon-user"></i> 4,991,023</span>
+                                </li>
+                                <li class=" ">
+                                    <span class="stars ">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star off"></i>
+                                    </span>
+                                    <em>4.5</em>
+                                </li>
+                            </ul>
+                            <div class="thumb">
+                                <div class="image">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2> Score! Hero</h2>
+                                    <p>First Touch Games Ltd.</p>
+                                </div>
+                            </div>
+                                <a href="">Additional Information</a>
+                                <div class="main-img">
+                                    <img class="main-img" src="images/img01.png" alt="">
+                                </div>
+    
+                            
+                        </div>
+                     
+                        <div class="card-item bg-03 position-relative ">
+                            <ul class="d-flex p-0 align-items-center list-unstyled ">
+                                <li>
+                                    <span class="user"><i class="icon-user"></i> 4,991,023</span>
+                                </li>
+                                <li>
+                                    <span class="stars">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star off"></i>
+                                        <i class="star off"></i>
+                                        <i class="star off"></i>
+                                    </span>
+                                    <em>4.5</em>
+                                </li>
+                            </ul>
+                            <div class="thumb">
+                                <div class="image">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2> Score! Hero</h2>
+                                    <p>First Touch Games Ltd.</p>
+                                </div>
+                            </div>
+                                <a href="">Additional Information</a>
+                                <div class="main-img">
+                                    <img class="" src="images/img03.png" alt="">
+                                </div>
+    
+                            
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="content-Box mt-50">
+                    <div class="head d-flex align-items-center justify-content-between">
+                        <div class="div">
+                            <h4>This week ’s </h4>
+                            <h3>Trending Games</h3>
+                        </div>
+                        <a href="" class="buttom">Veiw all</a>
+                    </div>
+                    <div class="boxs d-grid">
+                      
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box1"><span class="dots "><i></i></span></div>
+                            <ul id="box1" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box2"><span class="dots "><i></i></span></div>
+                            <ul id="box2" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box3"><span class="dots "><i></i></span></div>
+                            <ul id="box3" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                        
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box4"><span class="dots "><i></i></span></div>
+                            <ul id="box4" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="tab-content fade"  id="tab02">
+                <div class="content-Box mt-50">
+                    <div class="head d-flex align-items-center justify-content-between">
+                        <div class="div">
+                            <h4>Dont miss them</h4>
+                            <h3>Recommended for you</h3>
+                        </div>
+                        <a href="" class="buttom">Veiw all</a>
+                    </div>
+                    <div class="cards d-grid">
+                        <div class="card-item bg-01 position-relative">
+                            <ul class="d-flex p-0 align-items-center list-unstyled ">
+                                <li>
+                                    <span class="user"><i class="icon-user"></i> 4,991,023</span>
+                                </li>
+                                <li class=" ">
+                                    <span class="stars ">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star off"></i>
+                                    </span>
+                                    <em>4.5</em>
+                                </li>
+                            </ul>
+                            <div class="thumb">
+                                <div class="image">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2> Score! Hero</h2>
+                                    <p>First Touch Games Ltd.</p>
+                                </div>
+                            </div>
+                                <a href="">Additional Information</a>
+                                <div class="main-img">
+                                    <img class="" src="images/img01.png" alt="">
+                                </div>
+    
+                            
+                        </div>
+                        <div class="card-item bg-02 position-relative">
+                            <ul class="d-flex p-0 align-items-center list-unstyled ">
+                                <li>
+                                    <span class="user"><i class="icon-user"></i> 4,991,023</span>
+                                </li>
+                                <li>
+                                    <span class="stars">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star off"></i>
+                                        <i class="star off"></i>
+                                    </span>
+                                    <em>4.5</em>
+                                </li>
+                            </ul>
+                            <div class="thumb">
+                                <div class="image">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2> Score! Hero</h2>
+                                    <p>First Touch Games Ltd.</p>
+                                </div>
+                            </div>
+                                <a href="">Additional Information</a>
+                                <div class="main-img">
+                                    <img class="" src="images/img02.png" alt="">
+
+                                </div>
+                           
+                        </div>
+                        <div class="card-item bg-03 position-relative ">
+                            <ul class="d-flex p-0 align-items-center list-unstyled ">
+                                <li>
+                                    <span class="user"><i class="icon-user"></i> 4,991,023</span>
+                                </li>
+                                <li>
+                                    <span class="stars">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star off"></i>
+                                        <i class="star off"></i>
+                                        <i class="star off"></i>
+                                    </span>
+                                    <em>4.5</em>
+                                </li>
+                            </ul>
+                            <div class="thumb">
+                                <div class="image">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2> Score! Hero</h2>
+                                    <p>First Touch Games Ltd.</p>
+                                </div>
+                            </div>
+                                <a href="">Additional Information</a>
+                                <div class="main-img">
+                                    <img class="" src="images/img03.png" alt="">
+                                </div>
+    
+                            
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="content-Box mt-50">
+                    <div class="head d-flex align-items-center justify-content-between">
+                        <div class="div">
+                            <h4>This week ’s </h4>
+                            <h3>Trending Games</h3>
+                        </div>
+                        <a href="" class="buttom">Veiw all</a>
+                    </div>
+                    <div class="boxs d-grid">
+                      
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box1"><span class="dots "><i></i></span></div>
+                            <ul id="box1" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box2"><span class="dots "><i></i></span></div>
+                            <ul id="box2" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box3"><span class="dots "><i></i></span></div>
+                            <ul id="box3" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                        
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box4"><span class="dots "><i></i></span></div>
+                            <ul id="box4" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content fade"  id="tab03">
+                <div class="content-Box mt-50">
+                    
+                    <div class="head d-flex align-items-center justify-content-between">
+                        <div class="div">
+                            <h4>Dont miss them</h4>
+                            <h3>Recommended for you</h3>
+                        </div>
+                        <a href="" class="buttom">Veiw all</a>
+                    </div>
+                    <div class="cards d-grid">
+                        <div class="card-item bg-03 position-relative ">
+                            <ul class="d-flex p-0 align-items-center list-unstyled ">
+                                <li>
+                                    <span class="user"><i class="icon-user"></i> 4,991,023</span>
+                                </li>
+                                <li>
+                                    <span class="stars">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star off"></i>
+                                        <i class="star off"></i>
+                                        <i class="star off"></i>
+                                    </span>
+                                    <em>4.5</em>
+                                </li>
+                            </ul>
+                            <div class="thumb">
+                                <div class="image">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2> Score! Hero</h2>
+                                    <p>First Touch Games Ltd.</p>
+                                </div>
+                            </div>
+                                <a href="">Additional Information</a>
+                                <div class="main-img">
+                                    <img class="" src="images/img03.png" alt="">
+                                </div>
+    
+                            
+                        </div>
+    
+                        <div class="card-item bg-01 position-relative">
+                            <ul class="d-flex p-0 align-items-center list-unstyled ">
+                                <li>
+                                    <span class="user"><i class="icon-user"></i> 4,991,023</span>
+                                </li>
+                                <li class=" ">
+                                    <span class="stars ">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star off"></i>
+                                    </span>
+                                    <em>4.5</em>
+                                </li>
+                            </ul>
+                            <div class="thumb">
+                                <div class="image">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2> Score! Hero</h2>
+                                    <p>First Touch Games Ltd.</p>
+                                </div>
+                            </div>
+                                <a href="">Additional Information</a>
+                                <div class="main-img">
+                                    <img class="" src="images/img01.png" alt="">
+                                </div>
+    
+                            
+                        </div>
+                        <div class="card-item bg-02 position-relative">
+                            <ul class="d-flex p-0 align-items-center list-unstyled ">
+                                <li>
+                                    <span class="user"><i class="icon-user"></i> 4,991,023</span>
+                                </li>
+                                <li>
+                                    <span class="stars">
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star"></i>
+                                        <i class="star off"></i>
+                                        <i class="star off"></i>
+                                    </span>
+                                    <em>4.5</em>
+                                </li>
+                            </ul>
+                            <div class="thumb">
+                                <div class="image">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2> Score! Hero</h2>
+                                    <p>First Touch Games Ltd.</p>
+                                </div>
+                            </div>
+                                <a href="">Additional Information</a>
+                                <div class="main-img">
+                                    <img class="" src="images/img02.png" alt="">
+                                </div>
+    
+                           
+                        </div>
+                  
+                    </div>
+                </div>
+                <div class="content-Box mt-50">
+                    <div class="head d-flex align-items-center justify-content-between">
+                        <div class="div">
+                            <h4>This week ’s </h4>
+                            <h3>Trending Games</h3>
+                        </div>
+                        <a href="" class="buttom">Veiw all</a>
+                    </div>
+                    <div class="boxs d-grid">
+                      
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box1"><span class="dots "><i></i></span></div>
+                            <ul id="box1" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box2"><span class="dots "><i></i></span></div>
+                            <ul id="box2" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box3"><span class="dots "><i></i></span></div>
+                            <ul id="box3" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                        
+                        <div class="box">
+                            <div class="btn LinkDrop"  data-menu="box4"><span class="dots "><i></i></span></div>
+                            <ul id="box4" class="list-unstyled p-20 dropDown">
+                                <li><a href="">update</a></li>
+                                <li><a href="">Delete</a></li>
+                            </ul>
+                            <div class="thumb d-flex align-items-center">
+                               <div class="img"> <img src="images/image01.png" alt=""></div>
+                            
+                            <div class="caption">
+                                <h5>Block crafts</h5>
+                                <p>Fun Games</p>
+                            </div>
+                            
+                            </div>
+                            <div class="foot d-flex align-items-center justify-content-between">
+                                <div class="images-users d-flex align-items-center" >
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                        <figure><img src="images/001.png" alt=""></figure>
+                                        <figure><img src="images/002.png" alt=""></figure>
+                                        <figure><img src="images/003.png" alt=""></figure>
+                                </div>
+                                <div class="total">
+                                    <span><small>331,851 Total</small></span>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="js/Script.js"></script>
+</body>
+
+</html>
+
+<!--5:34:00 -->
