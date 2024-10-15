@@ -1,0 +1,87 @@
+/* same idea of bootstrap library file css u use same tage in class name in html */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.container{
+  padding: 20px;
+}
+.d-grid{
+    display: grid;
+}
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+/* flex	Displays an element as a block-level flex container */
+.d-flex{
+    display: flex;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.align-items-center{
+    align-items: center;
+}
+.ml-5{
+    margin-left:5px ;
+}
+.ml-30{
+    margin-left:30px ;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+.P-20{
+    padding: 20px;
+}
+.ml-15{
+    margin-right: 15px;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.list-unstyled{
+    list-style:none ;
+   
+}
+.p-0{
+    padding: 0;
+}
+.text-center{
+    text-align: center;
+}
+.pt-40{
+    padding-top: 40px;
+}
+.m-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.position-relative{
+    position: relative;
+}
+.mr-15{
+margin-right: 15px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+.justify-content-around{
+justify-content: space-around;
+}
+
+.justify-content-between{
+justify-content: space-between;
+}
+
+.em{
+    font-style: normal;
+}
